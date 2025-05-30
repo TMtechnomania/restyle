@@ -1,0 +1,37 @@
+{
+    "manifest_version": 3,
+    "name": "ReStyle",
+    "version": "1.0",
+    "description": "A Chrome extension to customize and enhance the Stack Overflow user experience.",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "sidePanel"
+    ],
+    "background": {
+        "service_worker": "/js/service.js"
+    },
+    "side_panel": {
+        "default_path": "/sidepanel.html"
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://stackoverflow.com/*"],
+            "js": ["/js/jquery.min.js", "/js/content.js"],
+            "css": ["/css/content.css"],
+            "run_at": "document_start"
+        }
+    ]
+}
