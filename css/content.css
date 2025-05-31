@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+	border: none !important;
+    border-radius: 0 !important;
+	box-sizing: border-box !important;
+	font-family: "Inter", sans-serif !important;
+	/* margin: 0 !important; */
+	/* outline: none !important; */
+	/* padding: 0 !important; */
+	text-decoration: none !important;
+}
+
+:root {
+	--primary: #F48024;
+	--light: #FCE6D2;
+	--dark: #D65A00;
+	--text: #333;
+	--text-light: #666;
+	--text-dark: #111;
+	--bg: #fff;
+	--surface: #F5F5F5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700 !important;
+}
+
+p,
+li,
+span,
+div,
+input,
+textarea {
+	font-weight: 400 !important;
+}
+
+body {
+    background-color: var(--bg) !important;
+    color: var(--text) !important;
+    padding-top: 80px !important;
+}
+
+/* ? Header */
+header {
+    background: var(--primary) !important;
+    color: var(--bg) !important;
+    height: 80px !important;
+}
+
+header.s-topbar .s-topbar--container {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+header.s-topbar .s-topbar--logo {
+    align-items: center !important;
+    background: var(--surface) !important;
+    display: flex !important;
+    height: 100% !important;
+    justify-content: center !important;
+    padding: 8px 16px !important;
+}
+
+header.s-topbar .s-navigation {
+    display: flex !important;
+    gap: 0 !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: fit-content !important;
+}
+
+header.s-topbar .s-navigation .s-navigation--item {
+    align-items: center !important;
+    color: var(--bg) !important;
+    display: flex !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    height: 100% !important;
+    padding: 0 16px !important;
+}
+
+header.s-topbar .s-navigation .s-navigation--item:hover {
+    background: var(--surface) !important;
+    color: var(--dark) !important;
+}
+
+header.s-topbar .s-topbar--searchbar {
+    align-items: center !important;
+    background: var(--surface) !important;
+    border-radius: 4px !important;
+    display: flex !important;
+    height: 40px !important;
+    padding: 0 !important;
+    margin: 0 16px !important;
+}
+
+header.s-topbar .s-topbar--searchbar .s-topbar--searchbar--input-group .s-input {
+    box-shadow: none !important;
+    height: 40px !important;
+    outline: none !important;
+    padding: 0 8px 0 40px !important;
+}
+
+.s-topbar .s-topbar--searchbar .s-topbar--searchbar--input-group .s-input-icon {
+    align-items: center !important;
+    display: flex !important;
+    height: 40px !important;
+    justify-content: center !important;
+    left: 0 !important;
+    padding: 12px !important;
+    top: 0 !important;
+    vertical-align: middle !important;
+    width: 40px !important;
+}
+
+header.s-topbar .s-topbar--container nav {
+    padding: 0 !important;
+}
+
+header.s-topbar .s-topbar--content {
+    align-items: center !important;
+    display: flex !important;
+    height: 100% !important;
+    margin-right: 16px !important;
+}
+
+header.s-topbar .s-topbar--content li {
+    height: 100% !important;
+    flex: 1 !important;
+}
+
+header.s-topbar .s-topbar--content li a {
+    align-items: center !important;
+    color: var(--bg) !important;
+    display: flex !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    height: 100% !important;
+    justify-content: center !important;
+    padding: 0 16px !important;
+    width: 80px !important;
+}
+
+header.s-topbar .s-topbar--content li a:hover {
+    background: var(--surface) !important;
+    color: var(--dark) !important;
+}
+
+.s-topbar .s-topbar--item:not(.s-topbar--item__unset) .svg-icon {
+    height: 16px !important;
+    width: 16px !important;
+}
+
+.s-topbar .s-topbar--item:not(.s-topbar--item__unset).is-selected {
+    background: var(--surface) !important;
+    color: var(--dark) !important;
+}
+
+header * {
+    margin: 0 !important;
+}
