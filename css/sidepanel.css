@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+	border: none;
+	border-radius: 0;
+	box-sizing: border-box;
+	box-shadow: none;
+	font-family: var(--font);
+	margin: 0;
+	padding: 0;
+	outline: none;
+	text-decoration: none;
+}
+
+:root {
+	--primary: #f48024;
+	--light: #f4802455;
+	--text: #333;
+	--text-dark: #111;
+	--text-light: #ddd;
+	--bg: #fff;
+	--surface: #f5f5f5;
+	--br: 4px;
+    --font: "Inter", sans-serif;
+}
+
+body {
+	background-color: var(--bg);
+    height: 100%;
+}
+
+header {
+	background-color: var(--primary);
+	color: var(--bg);
+	font-size: 14px;
+	font-weight: 600;
+	padding: 16px;
+}
+main {
+	color: var(--text);
+	font-size: 16px;
+	padding: 16px;
+}
+
+.input {
+	align-items: center;
+	background-color: var(--surface);
+	border-radius: var(--br);
+    border-top: 4px solid var(--primary);
+	color: var(--text-dark);
+	display: flex;
+	font-size: 16px;
+	justify-content: space-between;
+	margin-bottom: 16px;
+	padding: 8px 12px;
+	width: 100%;
+}
+.input:hover {
+    background-color: var(--light);
+}
+
+.input input[type="text"],
+.input input[type="number"] {
+	background: var(--bg);
+	border: none;
+	border-radius: var(--br);
+	color: var(--text-dark);
+	font-size: 16px;
+	height: 40px;
+	padding: 8px 12px;
+	text-align: right;
+	width: 45%;
+}
+
+.input input[type="color"], .input input[type="checkbox"] {
+	border: none;
+	border-radius: var(--br);
+	height: 40px;
+	width: 40px;
+}
+
+input[type="button"] {
+    background-color: var(--primary);
+    border: none;
+    border-radius: var(--br);
+    color: var(--bg);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    padding: 8px 12px;
+    width: 100%;
+}

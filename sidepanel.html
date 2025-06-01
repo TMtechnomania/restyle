@@ -1,12 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="/js/sidepanel.js"></script>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/sidepanel.css" />
+		<title>ReStyle Panel</title>
+	</head>
+	<body>
+		<header>
+			<h1>ReStyle</h1>
+			<p>Customize your Stack Overflow theme settings</p>
+		</header>
+		<main>
+      <div class="input">
+        <label for="theme">Use Theme Overlay:</label>
+        <input type="checkbox" name="theme" id="theme">
+      </div>
+			<div class="input">
+				<label for="primary">Primary Color:</label>
+				<input
+					type="color"
+					id="primary"
+					name="primary"
+					value="#f48024" />
+			</div>
+			<div class="input">
+				<label for="bg">Background Color:</label>
+				<input type="color" id="bg" name="bg" value="#ffffff" />
+			</div>
+			<div class="input">
+				<label for="surface">Surface Color:</label>
+				<input
+					type="color"
+					id="surface"
+					name="surface"
+					value="#f5f5f5" />
+			</div>
+			<div class="input">
+				<label for="text">Text Color:</label>
+				<input type="color" id="text" name="text" value="#333333" />
+			</div>
+			<div class="input">
+				<label for="text-dark">Dark Text Color:</label>
+				<input
+					type="color"
+					id="text-dark"
+					name="text-dark"
+					value="#111111" />
+			</div>
+			<div class="input">
+				<label for="text-light">Light Text Color:</label>
+				<input
+					type="color"
+					id="text-light"
+					name="text-light"
+					value="#dddddd" />
+			</div>
+			<div class="input">
+				<label for="border">Border Radius (Px):</label>
+				<input
+					type="number"
+					id="border"
+					name="border"
+					value="4"
+					min="0" />
+			</div>
+			<div class="input">
+				<label for="font">Font Family:</label>
+				<input
+					type="text"
+					id="font"
+					name="font"
+					value="Inter"
+					placeholder="Google Font" />
+			</div>
+      <input type="button" value="RESET SETTINGS" id="reset" />
+		</main>
+	</body>
+	<script src="/js/sidepanel.js"></script>
 </html>
+
+<!-- Make the sidepanel colors reflect the theme, bg to bg, surface to tiles, primary on borders, light on hover, br to border radius and padding to avoid overflow -->
