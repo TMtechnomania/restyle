@@ -521,7 +521,17 @@ body > .container {
 :is(#sidebar, .sidebar) :is(.s-sidebarwidget .s-sidebarwidget--item a) {
 	color: var(--text) !important;
 }
-:is(#sidebar, .sidebar) :is(h1, h2, h3, h4, h5, h6, .s-sidebarwidget--header,.s-sidebarwidget > div:first-child) {
+:is(#sidebar, .sidebar)
+	:is(
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		.s-sidebarwidget--header,
+		.s-sidebarwidget > div:first-child
+	) {
 	color: var(--primary) !important;
 	font-size: 18px !important;
 	font-weight: 600 !important;
@@ -537,7 +547,12 @@ body > .container {
 #sidebar .s-sidebarwidget .s-sidebarwidget--content :is(a, button) {
 	color: var(--text) !important;
 }
-#sidebar :is(a.s-btn__filled, button.s-btn__filled, .answer-votes.answered-accepted) {
+#sidebar
+	:is(
+		a.s-btn__filled,
+		button.s-btn__filled,
+		.answer-votes.answered-accepted
+	) {
 	color: var(--bg) !important;
 	background: var(--primary) !important;
 }
@@ -603,7 +618,8 @@ body > .container {
 	margin: 4px !important;
 	margin-right: 8px !important;
 }
-#sidebar :is(#related-tags, #hot-network-questions, #feed-link) a, #sidebar :is(.question-hyperlink) {
+#sidebar :is(#related-tags, #hot-network-questions, #feed-link) a,
+#sidebar :is(.question-hyperlink) {
 	color: var(--primary) !important;
 	font-weight: 500 !important;
 }
@@ -749,7 +765,7 @@ body > .container {
 	padding: 8px 16px !important;
 	width: 100% !important;
 }
-.inner-content #mainbar .js-stacks-validation  :is(.grippie) {
+.inner-content #mainbar .js-stacks-validation :is(.grippie) {
 	background: var(--primary) !important;
 	color: var(--bg) !important;
 	font-weight: 500 !important;
@@ -776,4 +792,37 @@ body > .container {
 .s-pagination .s-pagination--item.is-selected {
 	background: var(--primary) !important;
 	color: var(--bg) !important;
+}
+
+/* Listenn */
+.listen-icon {
+	background: var(--primary) !important;
+	border-radius: var(--br) !important;
+	color: var(--bg) !important;
+	fill: var(--bg) !important;
+	font-size: 16px !important;
+	display: inline-block !important;
+	height: 24px !important;
+	width: 24px !important;
+}
+
+.listen-icon svg {
+	color: var(--bg) !important;
+	fill: var(--bg) !important;
+	vertical-align: middle !important;
+	height: 24px !important;
+	width: 24px !important;
+}
+
+.restyle-listen-icon {
+	position: fixed !important;
+	width: 24px !important;
+	height: 24px !important;
+	cursor: pointer !important;
+	z-index: 2147483647 !important;
+	padding: 4px !important;
+	background: var(--light) !important;
+	border: 1px solid var(--primary) !important;
+	color: var(--primary) !important;
+	border-radius: var(--br) !important;
 }
